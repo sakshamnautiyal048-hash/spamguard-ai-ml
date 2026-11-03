@@ -1,23 +1,23 @@
-# Remaining files from original project
+# Status
 
-The original zip contained a full set of shadcn/ui components and polished route pages.
+**Working full UI is now in the repo.**
 
-This repository already contains:
-- Complete ML pipeline (`ml/`)
-- Core analysis logic (`email-analysis`, `nb-model`, `history`, `ml-api`)
-- Working phone page, root layout, Nav, basic UI button
-- Config & README
+## Present and working
 
-**Still useful to copy from the original zip if you need the full polished UI:**
+- Landing page (`src/routes/index.tsx`)
+- Email scanner with real ML + heuristics (`src/routes/email.tsx`)
+- Phone checker (`src/routes/phone.tsx`)
+- Dashboard with history + CSV export (`src/routes/dashboard.tsx`)
+- Dataset / in-browser training page (`src/routes/dataset.tsx`)
+- Root layout, Nav, styles, core components
+- Complete Python ML pipeline (`ml/`)
 
-- `src/routes/index.tsx` (landing page)
-- `src/routes/email.tsx` (full email scanner UI)
-- `src/routes/dataset.tsx`
-- `src/routes/dashboard.tsx` (enhanced version)
-- Most files under `src/components/ui/` (shadcn components)
-- `src/styles.css` (full Tailwind + custom theme)
-- `src/routeTree.gen.ts`
+## Optional extras still in original zip
 
-You can copy them from the original `SpamGuard-AI-2.zip` into this repo and commit.
+If you want the full shadcn/ui component library or more polished effects:
 
-The current code is enough to run the real ML model and basic pages.
+- Remaining files under `src/components/ui/`
+- Original longer versions of some pages
+- `public/downloads/spam.csv` (download the classic SMS Spam Collection instead)
+
+The current repository is enough to run the app with the real ML model.
